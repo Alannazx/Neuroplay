@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carrinho — NeuroPlay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+<link rel="icon" href="/neuroplay/img/favicon.png">
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap topo-in">
+    <a class="marca" href="index.html">
+      <span class="pontos" aria-hidden="true">
+        <i style="background:var(--azul)"></i><i style="background:var(--amarelo)"></i><i style="background:var(--roxo)"></i>
+        <i style="background:var(--verde)"></i><i style="background:var(--vermelho)"></i><i style="background:var(--azul)"></i>
+      </span>
+      NeuroPlay
+    </a>
+    <nav class="nav">
+      <a href="index.html">Loja</a>
+      <a class="btn-carrinho" href="carrinho.html" aria-current="page">
+        Carrinho <span class="selo" id="selo">0</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="secao">
+    <div class="wrap">
+      <div class="cabeca">
+        <div>
+          <h2>Seu carrinho</h2>
+          <p id="sub-carrinho">Revise os itens antes de finalizar.</p>
+        </div>
+      </div>
+      <div id="carrinho-conteudo"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap rodape-in">
+    <span class="marca">
+      <span class="pontos" aria-hidden="true">
+        <i style="background:var(--azul)"></i><i style="background:var(--amarelo)"></i><i style="background:var(--roxo)"></i>
+        <i style="background:var(--verde)"></i><i style="background:var(--vermelho)"></i><i style="background:var(--azul)"></i>
+      </span>
+      NeuroPlay
+    </span>
+    <p>Brinquedos sensoriais para casa, escola e consultório.</p>
+    <p class="direita">oi@neuroplay.com.br · São Paulo, SP</p>
+  </div>
+</footer>
+
+<!-- Modal do produto (também funciona aqui, ao clicar na miniatura) -->
+<div class="veu" id="veu" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+  <div class="modal" id="modal"></div>
+</div>
+
+<div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

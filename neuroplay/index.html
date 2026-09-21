@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NeuroPlay — Brinquedos sensoriais</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+<link rel="icon" href="/neuroplay/img/favicon.png">
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap topo-in">
+    <a class="marca" href="index.html">
+      <span class="pontos" aria-hidden="true">
+        <i style="background:var(--azul)"></i><i style="background:var(--amarelo)"></i><i style="background:var(--roxo)"></i>
+        <i style="background:var(--verde)"></i><i style="background:var(--vermelho)"></i><i style="background:var(--azul)"></i>
+      </span>
+      NeuroPlay
+    </a>
+    <nav class="nav">
+      <a href="index.html" aria-current="page">Loja</a>
+      <a class="btn-carrinho" href="carrinho.html">
+        Carrinho <span class="selo" id="selo">0</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="heroi">
+    <div class="wrap">
+      <h1>Brinquedos que acalmam, organizam e divertem.</h1>
+      <p>Cada brinquedo da NeuroPlay trabalha um sistema sensorial específico. Escolha pela cor do sistema que sua criança mais precisa regular hoje.</p>
+      <ul class="tiras" id="tiras"></ul>
+    </div>
+  </section>
+
+  <section class="secao" id="produtos">
+    <div class="wrap">
+      <div class="cabeca">
+        <div>
+          <h2 id="titulo-vitrine">Todos os brinquedos</h2>
+          <p id="sub-vitrine">Toque em um brinquedo para ver os detalhes.</p>
+        </div>
+        <button class="limpar" id="limpar" hidden onclick="filtrar(null)">Ver todos</button>
+      </div>
+      <div class="grade" id="grade"></div>
+    </div>
+  </section>
+
+  <section class="secao" style="padding-top:0">
+    <div class="wrap">
+      <div class="faixa">
+        <div>
+          <h3>Testado por terapeutas</h3>
+          <p>Cada item é avaliado por terapeutas ocupacionais antes de entrar no catálogo. A ficha diz qual sistema sensorial o brinquedo trabalha e por quê.</p>
+        </div>
+        <div>
+          <h3>Troca sem justificativa</h3>
+          <p>Sensorial é pessoal. Se o brinquedo não funcionou para a sua criança, você troca em até 30 dias por outro do catálogo.</p>
+        </div>
+        <div>
+          <h3>Materiais sem cheiro forte</h3>
+          <p>Silicone e madeira atóxicos, sem tintas com odor residual, porque o olfato também entra na conta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap rodape-in">
+    <span class="marca">
+      <span class="pontos" aria-hidden="true">
+        <i style="background:var(--azul)"></i><i style="background:var(--amarelo)"></i><i style="background:var(--roxo)"></i>
+        <i style="background:var(--verde)"></i><i style="background:var(--vermelho)"></i><i style="background:var(--azul)"></i>
+      </span>
+      NeuroPlay
+    </span>
+    <p>Brinquedos sensoriais para casa, escola e consultório.</p>
+    <p class="direita">oi@neuroplay.com.br · São Paulo, SP</p>
+  </div>
+</footer>
+
+<!-- Modal do produto (abre grande ao clicar) -->
+<div class="veu" id="veu" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+  <div class="modal" id="modal"></div>
+</div>
+
+<div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
